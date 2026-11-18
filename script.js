@@ -4,12 +4,12 @@ const rawSkill = "  ai engineer ";
 const rawCity = " UYO ";
 
 // 2. Clean the input
-const name = rawName.trim();
+const cleanName = rawName.trim();
 const skill = rawSkill.trim().toLowerCase();
 const city = rawCity.trim().toLowerCase();
 
 // 3. Capitalise the first letter of the name and city
-const realName = name[0].toUpperCase() + name.slice(1);
+const realName = cleanName[0].toUpperCase() + cleanName.slice(1);
 
 // Old way (counting positions):
 // const realSkill = skill[0].toUpperCase() + skill[1].toUpperCase() + skill.slice(2, 3) + skill[3].toUpperCase() + skill.slice(4);
